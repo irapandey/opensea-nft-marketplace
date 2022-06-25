@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import {BiHeart} from 'react-icons/bi'
 
@@ -19,10 +20,11 @@ const style = {
   }
 
 
-const NFTCard = ({nftItem}) => {
+const NFTCard = ({nftItem, title, listings }) => {
 
     const [isListed, setIsListed] = useState(false)
     const [price, setPrice] = useState(0)
+    const Router = useRouter()
 
     useEffect(() => {
         const listing = listings.find((listing) => listing.asset.id === nftItem.id)
@@ -59,7 +61,7 @@ const NFTCard = ({nftItem}) => {
               <div className={style.priceTag}>Price</div>
               <div className={style.priceValue}>
                 <img
-                  src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
+                  src='https://openseauserdata.com/files/6f8e2979d428180222796ff4a33ab929.svg'
                   alt="eth"
                   className={style.ethLogo}
                 />

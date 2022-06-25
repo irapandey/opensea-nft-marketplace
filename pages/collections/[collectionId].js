@@ -45,7 +45,6 @@ const Collection = () => {
 
       const sdk = new ThirdwebSDK(
         provider.getSigner(),
-        'https://eth-rinkeby.alchemyapi.io/v2/FkSbc0d9RqjngHlvb9G9In8z8OQvSn4U'
       )
       return sdk.getNFTModule(collectionId)
 
@@ -67,7 +66,6 @@ const Collection = () => {
       if (!provider) return
       const sdk = new ThirdwebSDK(
       provider.getSigner(),
-      'https://eth-rinkeby.alchemyapi.io/v2/FkSbc0d9RqjngHlvb9G9In8z8OQvSn4U'
       )
       return sdk.getMarketplaceModule(
         '0xAdDd9B31F9ff4FE7D4BD2CD0B67132398E6354b8'
@@ -180,7 +178,7 @@ const Collection = () => {
             <div className={style.collectionStat}>
               <div className={style.statValue}>
                 <img
-                  src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
+                  src="https://openseauserdata.com/files/6f8e2979d428180222796ff4a33ab929.svg"
                   alt="eth"
                   className={style.ethLogo}
                 />
@@ -191,7 +189,7 @@ const Collection = () => {
             <div className={style.collectionStat}>
               <div className={style.statValue}>
                 <img
-                  src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
+                  src="https://openseauserdata.com/files/6f8e2979d428180222796ff4a33ab929.svg"
                   alt="eth"
                   className={style.ethLogo}
                 />
